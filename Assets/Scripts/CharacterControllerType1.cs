@@ -68,13 +68,12 @@ public class CharacterControllerType1 : MonoBehaviour
         }
 
         
-        //Broken atm
-        /*
+
         if (dashAction.action.triggered && groundedPlayer)
         {
-            playerSpeed = (playerSpeed * sprintMultiplier);
+            playerSpeed = playerSpeed * sprintMultiplier;
         }
-        */
+        
 
 
         playerVelocity.y += gravityValue * Time.deltaTime; //Gravity
