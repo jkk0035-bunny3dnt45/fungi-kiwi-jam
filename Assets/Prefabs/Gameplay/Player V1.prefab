@@ -467,7 +467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8385672952919297005}
   - component: {fileID: 9073283345334789222}
-  - component: {fileID: 5969949291301370005}
+  - component: {fileID: 1488308382576043161}
   m_Layer: 0
   m_Name: Player V1
   m_TagString: Player
@@ -518,7 +518,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5969949291301370005
+--- !u!114 &1488308382576043161
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -527,12 +527,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8305467834311520061}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9936f056f4570da49a9407feb8fe48b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b7bcbce401b35f429be96bd49e5ae12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayerImmune: 1
-  playerSpeed: 7
+  playerSpeed: 8
   controller: {fileID: 9073283345334789222}
-  moveAction: {fileID: -1680190386980627800, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  jumpAction: {fileID: -2099379676528639254, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  dashAction: {fileID: -7471211009204490832, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  moveAction: {fileID: 2710179420985842036, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  jumpAction: {fileID: 7013440853769813819, guid: 052faaac586de48259a63d0c4782560b, type: 3}

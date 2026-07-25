@@ -24,23 +24,7 @@ public class CharacterControllerType1 : MonoBehaviour
     //public InputActionReference dashAction; //Shift run / dash
 
 
-
-    //Commented cause i forget why these are declared for
-    /*
-    private void OnEnable()
-    {
-        moveAction.action.Enable();
-        jumpAction.action.Enable();
-    }
-
-    private void OnDisable()
-    {
-        moveAction.action.Disable();
-        jumpAction.action.Disable();
-    }
-    */
-
-    void Update()
+void Update()
     {
         groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)
@@ -51,15 +35,7 @@ public class CharacterControllerType1 : MonoBehaviour
         // Read input
         Vector2 input = moveAction.action.ReadValue<Vector2>();
         Vector3 move = new Vector3(input.x, 0, 0);
-        move = Vector3.ClampMagnitude(move, 1f);
-
-        //Rotates the Parent object causing child camera object to rotate
-        /*
-        if (move != Vector3.zero)
-        {
-            transform.forward = move;
-        }
-        */        
+        move = Vector3.ClampMagnitude(move, 1f);   
 
         // Jump
         if (jumpAction.action.triggered && groundedPlayer)
