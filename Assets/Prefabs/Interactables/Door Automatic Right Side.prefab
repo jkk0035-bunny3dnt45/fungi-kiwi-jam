@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5507590648717955081}
   m_Layer: 0
-  m_Name: Door Automatic
+  m_Name: Door Automatic Right Side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7137424701621068414}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -32,7 +32,7 @@ Transform:
   - {fileID: 7063467861760259287}
   - {fileID: 2980861805026469517}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &7911947436224884948
 GameObject:
   m_ObjectHideFlags: 0
@@ -44,8 +44,8 @@ GameObject:
   - component: {fileID: 2980861805026469517}
   - component: {fileID: 4572838889228882455}
   - component: {fileID: 4549241349417581056}
-  - component: {fileID: 1639461613728535078}
-  - component: {fileID: 7256227989252481734}
+  - component: {fileID: 4204829880515720109}
+  - component: {fileID: 5824544277162501705}
   m_Layer: 0
   m_Name: Door Trigger
   m_TagString: Untagged
@@ -62,8 +62,8 @@ Transform:
   m_GameObject: {fileID: 7911947436224884948}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 3, z: 0.25}
-  m_LocalScale: {x: 4, y: 6, z: 8}
+  m_LocalPosition: {x: 2, y: 3, z: -1.65}
+  m_LocalScale: {x: 4, y: 6, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5507590648717955081}
@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Tag: Player
   doorController: {fileID: 5759927785445536239}
---- !u!33 &1639461613728535078
+--- !u!33 &4204829880515720109
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,7 +111,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7911947436224884948}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &7256227989252481734
+--- !u!23 &5824544277162501705
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,7 +134,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d61ab06765e164b43a453da83e3dcda6, type: 2}
+  - {fileID: 2100000, guid: 70be0d6ad9ef88944b5d2aed5b2098a4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

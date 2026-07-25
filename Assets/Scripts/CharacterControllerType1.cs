@@ -8,10 +8,10 @@ public class CharacterControllerType1 : MonoBehaviour
 
     public bool isPlayerImmune = true;
 
-    private float playerSpeed = 5.0f;
+    public float playerSpeed = 5.0f;
     private float jumpHeight = 1.5f;
     private float gravityValue = -9.81f;
-    private float sprintMultiplier = 10f;
+    //private float sprintMultiplier = 10f;
 
 
     public CharacterController controller;
@@ -21,7 +21,7 @@ public class CharacterControllerType1 : MonoBehaviour
 
     public InputActionReference moveAction; // expects Vector2
     public InputActionReference jumpAction; // expects Button
-    public InputActionReference dashAction; //Shift run / dash
+    //public InputActionReference dashAction; //Shift run / dash
 
 
 
@@ -66,14 +66,6 @@ public class CharacterControllerType1 : MonoBehaviour
         {
             playerVelocity.y = Mathf.Sqrt(jumpHeight * -2.0f * gravityValue);
         }
-
-        
-
-        if (dashAction.action.triggered && groundedPlayer)
-        {
-            playerSpeed = playerSpeed * sprintMultiplier;
-        }
-        
 
 
         playerVelocity.y += gravityValue * Time.deltaTime; //Gravity

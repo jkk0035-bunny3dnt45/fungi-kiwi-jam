@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5507590648717955081}
   m_Layer: 0
-  m_Name: Door Automatic
+  m_Name: Door Automatic Left Side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,8 +44,8 @@ GameObject:
   - component: {fileID: 2980861805026469517}
   - component: {fileID: 4572838889228882455}
   - component: {fileID: 4549241349417581056}
-  - component: {fileID: 1639461613728535078}
-  - component: {fileID: 7256227989252481734}
+  - component: {fileID: 3921511942803189277}
+  - component: {fileID: 9136801132127345511}
   m_Layer: 0
   m_Name: Door Trigger
   m_TagString: Untagged
@@ -62,8 +62,8 @@ Transform:
   m_GameObject: {fileID: 7911947436224884948}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 3, z: 0.25}
-  m_LocalScale: {x: 4, y: 6, z: 8}
+  m_LocalPosition: {x: 2, y: 3, z: -1.65}
+  m_LocalScale: {x: 4, y: 6, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5507590648717955081}
@@ -103,7 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Tag: Player
   doorController: {fileID: 5759927785445536239}
---- !u!33 &1639461613728535078
+--- !u!33 &3921511942803189277
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,7 +111,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7911947436224884948}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &7256227989252481734
+--- !u!23 &9136801132127345511
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,7 +134,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d61ab06765e164b43a453da83e3dcda6, type: 2}
+  - {fileID: 2100000, guid: aa15b52784ad2364a9369abc1b92326e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

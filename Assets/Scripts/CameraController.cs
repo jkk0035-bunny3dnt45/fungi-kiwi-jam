@@ -8,7 +8,8 @@ public class CameraController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        World1Camera.enabled = true;
+        World2Camera.enabled = false;
     }
 
     // Update is called once per frame
