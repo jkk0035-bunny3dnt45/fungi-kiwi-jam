@@ -33958,9 +33958,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   images:
-  - {fileID: 21300000, guid: 759985b5198d30b62bbb65a7318ed988, type: 3}
-  - {fileID: 21300000, guid: 67a4097154fd2226893766da75bccdac, type: 3}
-  - {fileID: 21300000, guid: 08bea8f53cfc62b2c838245b00068e99, type: 3}
+  - {fileID: 21300000, guid: 50a5413bc6c7299d6aa3ae101a1c8426, type: 3}
+  - {fileID: 21300000, guid: f9b7d937c9816a934882bc96519aaad4, type: 3}
+  - {fileID: 21300000, guid: cb26375d672e81cd9b871ace9368b54f, type: 3}
   switchInterval: 5
   endGameAfterSlideshow: 0
 --- !u!4 &1518355079 stripped
