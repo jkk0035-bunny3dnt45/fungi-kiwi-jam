@@ -15,6 +15,7 @@ public class CharacterControllerType1 : MonoBehaviour
 
 
     public CharacterController controller;
+    public Animator animator;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
 
@@ -50,6 +51,13 @@ public class CharacterControllerType1 : MonoBehaviour
 
         // Read input
         Vector2 input = moveAction.action.ReadValue<Vector2>();
+        animator.SetBool("IsWalking", input.magnitude > 0.01f);
+        if (input.x != 0)
+        {
+            Vector3 scale = animator.transform.localScale;
+            scale.x = Mathf.Sign(input.x) * Mathf.Abs(scale.x);
+            animator.transform.localScale = scale;
+        }
         Vector3 move = new Vector3(input.x, 0, 0);
         move = Vector3.ClampMagnitude(move, 1f);
 
