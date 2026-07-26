@@ -76,7 +76,10 @@ public class ImageSlideshow : MonoBehaviour
 
             if (currentIndex >= images.Length)
             {
-                Destroy(imageComponent.gameObject);
+                if (!endGameAfterSlideshow)
+                {
+                    Destroy(imageComponent.gameObject);
+                }
                 Destroy(this);
                 if (endGameAfterSlideshow)
                 {
