@@ -7,8 +7,6 @@ public class TriggerDialogBox : MonoBehaviour
     public string message;
 
     private bool playerInTrigger = false;
-    private GUIStyle popupStyle;
-    private bool styleInitialized;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -30,18 +28,16 @@ public class TriggerDialogBox : MonoBehaviour
     {
         if (!playerInTrigger) return;
 
-        if (!styleInitialized)
-        {
-            popupStyle = new GUIStyle(GUI.skin.box);
-            popupStyle.fontSize = 18;
-            popupStyle.alignment = TextAnchor.MiddleCenter;
-            popupStyle.wordWrap = true;
-            popupStyle.normal.textColor = Color.white;
-            styleInitialized = true;
-        }
+        float baseFontSize = Mathf.Min(Screen.width, Screen.height) * 0.03f;
+
+        GUIStyle popupStyle = new GUIStyle(GUI.skin.box);
+        popupStyle.fontSize = Mathf.RoundToInt(baseFontSize);
+        popupStyle.alignment = TextAnchor.MiddleCenter;
+        popupStyle.wordWrap = true;
+        popupStyle.normal.textColor = Color.white;
 
         float width = Screen.width * 0.4f;
-        float height = 100;
+        float height = Screen.height * 0.15f;
         float x = (Screen.width - width) * 0.5f;
         float y = Screen.height * 0.65f;
 
