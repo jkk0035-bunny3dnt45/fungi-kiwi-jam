@@ -5,6 +5,7 @@ public class ImageSlideshow : MonoBehaviour
 {
     [SerializeField] private Sprite[] images;
     [SerializeField] private float switchInterval = 3f;
+    [SerializeField] private bool endGameAfterSlideshow;
 
     private Image imageComponent;
     private int currentIndex = 0;
@@ -77,6 +78,10 @@ public class ImageSlideshow : MonoBehaviour
             {
                 Destroy(imageComponent.gameObject);
                 Destroy(this);
+                if (endGameAfterSlideshow)
+                {
+                    Application.Quit();
+                }
                 return;
             }
 
